@@ -11,8 +11,8 @@
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('login') }}">
+<div class="text-center">
+<form method="POST" action="{{ route('login') }}">
             @csrf
 
             <!-- Email Address -->
@@ -52,5 +52,7 @@
                 </x-button>
             </div>
         </form>
+</div>
+        
     </x-auth-card>
 </x-guest-layout>
